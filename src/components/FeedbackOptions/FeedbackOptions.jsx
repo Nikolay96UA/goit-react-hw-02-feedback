@@ -6,11 +6,10 @@ export default function FeedbackOptions({ options, onLeaveFeeback }) {
     <ul className={css.options}>
       {options.map(option => {
         return (
-          <li>
+          <li key={option}>
             <button
               className={css.button}
               type="button"
-              key={option}
               onClick={() => onLeaveFeeback(option)}
             >
               {option}

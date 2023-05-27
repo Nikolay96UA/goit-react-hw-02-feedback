@@ -38,8 +38,7 @@ export default class App extends React.Component {
           options={options}
           onLeaveFeeback={this.handleFeedback}
         />
-        
-        
+
         {this.countTotalFeedback() === 0 ? (
           <Notification message="There is no feedback" />
         ) : (
